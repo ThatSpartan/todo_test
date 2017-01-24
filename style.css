@@ -19,7 +19,28 @@ ul {
 }
 
 .input {
-  padding: 7px;
+  /*padding: 7px;*/
+  /*background-color: #eee;*/
+  /*border-radius: 5px;*/
+  padding-bottom: 4px;
+  margin-left: 7px;
+  padding-left: 1px;
+  border-bottom: 3px solid #eee;
+  transition: all .15s ease-in-out;
+}
+
+.input:focus {
+  border-color: rgb(60, 122, 226);
+}
+
+.add_todo_button {
   background-color: #eee;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 100%;
+  transition: all .15s ease-in-out;
+}
+
+.add_todo_button:hover {
+  color: rgb(60, 122, 226);
 }

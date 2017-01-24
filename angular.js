@@ -3,12 +3,12 @@ angular.module('todoApp', [])
 
     $scope.todo_list = [
       {your_name: 'Dominik'},
-      {your_name: 'Alex'},
-      {your_name: 'Mme Sam SUCK'}
+      {your_name: 'Alex'}
     ];
 
     $scope.add_todo = function() {
       $scope.todo_list.push({your_name: $scope.your_name});
+      $scope.your_name = '';
     };
 
   });
