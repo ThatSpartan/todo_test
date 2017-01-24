@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Angular Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="angular.js"></script>
+  </head>
+  <body>
+
+    <h1>Todo</h1>
+
+    <div ng-controller="todoController">
+
+      <ul>
+
+        <li ng-repeat="item in todo_list"><input type="checkbox"> {{item.your_name}}</li>
+
+      </ul>
+
+      <form ng-submit="add_todo()">
+
+        <input type="text" class="input" ng-model="your_name" placeholder="Name">
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+  </body>
+</html>
