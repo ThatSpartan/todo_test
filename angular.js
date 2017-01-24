@@ -3,7 +3,8 @@ angular.module('todoApp', [])
 
     $scope.todo_list = [
       {your_name: 'Dominik'},
-      {your_name: 'Alex'}
+      {your_name: 'Alex'},
+      {your_name: 'Mme Sam SUCK'}
     ];
 
     $scope.add_todo = function() {
